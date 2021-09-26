@@ -71,6 +71,6 @@ even_name :: [a] -> Bool
 even_name x =
     is_even (length x)
 
-something :: [[Char]] -> [[Char]] -> [[Char]] -> [[Char]]
-something a b c =
+wholeName :: [[Char]] -> [[Char]] -> [[Char]] -> [[Char]]
+wholeName a b c =
     do my_filter even_name x where x = my_zip (\x y -> x ++ " " ++ y) (my_zip (\x y -> x ++ " " ++ (take 1 y) ++ ".") (a) (b)) (c)
